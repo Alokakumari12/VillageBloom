@@ -92,7 +92,7 @@ const deleteData = async (req, res, next) => {
     let seller;
 
     try {
-        seller = await SellerModel.findByIdAndDelete(id);
+        seller = await SellerModel.findByIdAndDelete(id);//refix delete
     } catch (err) {
         console.log(err);
     }
