@@ -6,7 +6,7 @@ const SellerSchema = new Schema({//form
 
     fullName: {
         type: String,
-        required: true,
+        required: true,//fullname fix
     },
     email: {
         type: String,
