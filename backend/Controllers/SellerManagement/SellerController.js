@@ -24,7 +24,7 @@ const addData = async (req, res, next) => {
             return res.status(400).json({ message: "Email already exists" });
         }
     
-        const seller = new SellerModel({
+        const seller = new SellerModel({//variable 
             fullName,
             email,
             password,
