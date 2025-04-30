@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Product admin creation
 function AddProductAdmin() {
     const [formData, setFormData] = useState({
         sellerID: 'admin',
