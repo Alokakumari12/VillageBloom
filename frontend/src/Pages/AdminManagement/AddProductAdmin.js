@@ -19,7 +19,11 @@ function AddProductAdmin() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
+
 //file handle changes
+=======
+
+
     const handleFileChange = (e) => {
         const files = e.target.files;
         const validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
