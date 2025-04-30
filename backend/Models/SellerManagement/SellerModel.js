@@ -22,7 +22,7 @@ const SellerSchema = new Schema({//form
     },
     address: {
         type: String,
-        required: true,
+        required: true,//address refix
     },
     category: {
         type: String,
