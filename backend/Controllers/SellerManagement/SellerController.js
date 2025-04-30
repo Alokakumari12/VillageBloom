@@ -66,7 +66,7 @@ const updateData = async (req, res, next) => {
     let seller;
 
     try {
-        seller = await SellerModel.findByIdAndUpdate(id, {
+        seller = await SellerModel.findByIdAndUpdate(id, {//
             fullName: fullName,
             email: email,
             password: password,
