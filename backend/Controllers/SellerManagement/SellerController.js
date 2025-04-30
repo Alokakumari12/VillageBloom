@@ -24,7 +24,7 @@ const addData = async (req, res, next) => {
             return res.status(400).json({ message: "Email already exists" });
         }
     
-        const seller = new SellerModel({
+        const seller = new SellerModel({//variable 
             fullName,
             email,
             password,
@@ -45,7 +45,7 @@ const addData = async (req, res, next) => {
 };
 //Get by Id
 const getById = async (req, res, next) => {
-    const id = req.params.id;
+    const id = req.params.id;//const seller
     let seller;
     try {
         seller = await SellerModel.findById(id);
@@ -66,7 +66,7 @@ const updateData = async (req, res, next) => {
     let seller;
 
     try {
-        seller = await SellerModel.findByIdAndUpdate(id, {
+        seller = await SellerModel.findByIdAndUpdate(id, {//
             fullName: fullName,
             email: email,
             password: password,
@@ -92,7 +92,7 @@ const deleteData = async (req, res, next) => {
     let seller;
 
     try {
-        seller = await SellerModel.findByIdAndDelete(id);
+        seller = await SellerModel.findByIdAndDelete(id);//refix delete
     } catch (err) {
         console.log(err);
     }
@@ -103,12 +103,12 @@ const deleteData = async (req, res, next) => {
 };
 // Login Controller
 const login = async (req, res, next) => {
-    const { email, password } = req.body;
+    const { email, password } = req.body;//const email,passward
 
     let seller;
 
     try {
-        seller = await SellerModel.findOne({ email: email });
+        seller = await SellerModel.findOne({ email: email });//using try catch
 
         if (!seller) {
             return res.status(404).json({ message: "Invalid email or password" });
