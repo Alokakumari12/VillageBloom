@@ -1,5 +1,5 @@
 const PaymentModel = require("../../Models/PaymentManagement/PaymentModel");
-const CartModel = require("../../Models/CartManagement/CartModel"); // Import CartModel
+const CartModel = require("../../Models/CartManagement/CartModel"); // Import the CartModel
 
 //Insert Data
 const addData = async (req, res, next) => {
