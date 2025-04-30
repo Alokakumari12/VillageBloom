@@ -110,7 +110,7 @@ const updateData = async (req, res, next) => {
     }
 };
 
-//Delete data
+//data Delete 
 const deleteData = async (req, res, next) => {
     const id = req.params.id;
 
