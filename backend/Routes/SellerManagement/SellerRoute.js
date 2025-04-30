@@ -6,7 +6,7 @@ router.get("/", SellerController.getAllDetails);
 router.post("/", SellerController.addData);
 router.get("/:id", SellerController.getById);
 router.put("/:id", SellerController.updateData);
-router.delete("/:id", SellerController.deleteData);
+router.delete("/:id", SellerController.deleteData);//delete
 router.post("/login", SellerController.login);//export
 
 module.exports = router;
