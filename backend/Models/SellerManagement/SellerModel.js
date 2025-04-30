@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const SellerSchema = new Schema({
+const SellerSchema = new Schema({//form
 
     fullName: {
         type: String,
