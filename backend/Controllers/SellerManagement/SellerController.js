@@ -103,7 +103,7 @@ const deleteData = async (req, res, next) => {
 };
 // Login Controller
 const login = async (req, res, next) => {
-    const { email, password } = req.body;
+    const { email, password } = req.body;//const email,passward
 
     let seller;
 
