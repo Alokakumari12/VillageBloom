@@ -64,7 +64,7 @@ const getById = async (req, res, next) => {
     return res.status(200).json({ blog });
 };
 
-//Update Details
+//Updating detail
 const updateData = async (req, res, next) => {
     const id = req.params.id;
     const { title, description, date, ownerName, category } = req.body || {}; // Fallback to empty object if req.body is undefined
