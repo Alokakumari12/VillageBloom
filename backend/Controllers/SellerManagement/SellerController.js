@@ -45,7 +45,7 @@ const addData = async (req, res, next) => {
 };
 //Get by Id
 const getById = async (req, res, next) => {
-    const id = req.params.id;
+    const id = req.params.id;//const seller
     let seller;
     try {
         seller = await SellerModel.findById(id);
