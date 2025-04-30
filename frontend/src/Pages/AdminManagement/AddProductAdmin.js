@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Product admin creation
 function AddProductAdmin() {
     const [formData, setFormData] = useState({
         sellerID: 'admin',
@@ -18,6 +19,10 @@ function AddProductAdmin() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
+
+//file handle changes
+=======
+
 
     const handleFileChange = (e) => {
         const files = e.target.files;
@@ -82,7 +87,7 @@ function AddProductAdmin() {
             console.error(error);
         }
     };
-
+//return products
     return (
         <div className='continer_full'>
             <div className='manage_Nav_full'>

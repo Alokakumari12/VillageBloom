@@ -96,7 +96,8 @@ const updateData = async (req, res, next) => {
 
         // Update the blog in the database
         blog = await BlogModel.findByIdAndUpdate(id, updatedData, { new: true });
-
+        
+        // Check if the update was successful
         if (!blog) {
             return res.status(500).json({ message: "Failed to update blog" });
         }
@@ -110,7 +111,10 @@ const updateData = async (req, res, next) => {
     }
 };
 
-//data Delete 
+
+//Delete data
+//check exception handling
+
 const deleteData = async (req, res, next) => {
     const id = req.params.id;
 
