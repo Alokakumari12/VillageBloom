@@ -49,7 +49,7 @@ const addData = async (req, res, next) => {
     }
 };
 
-//Get by Id
+//getting id
 const getById = async (req, res, next) => {
     const id = req.params.id;
     let blog;
