@@ -99,7 +99,7 @@ const updateData = async (req, res, next) => {
                 return res.status(404).json({ message: "Product not found" });
             }
 
-            // Update fields
+            //updating field
             product.productName = productName;
             product.price = price;
             product.description = description;
