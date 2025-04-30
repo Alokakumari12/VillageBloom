@@ -3,7 +3,7 @@ const UserModel = require("../../Models/BuyerManagement/BuyerModel");
 const { v4: uuidv4 } = require("uuid");
 const path = require("path");
 
-//Display Data
+//displaying data
 const getAllDetails = async (req, res, next) => {
     let blog;
     try {
