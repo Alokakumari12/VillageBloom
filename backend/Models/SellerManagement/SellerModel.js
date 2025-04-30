@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const SellerSchema = new Schema({
+const SellerSchema = new Schema({//form
 
     fullName: {
         type: String,
-        required: true,
+        required: true,//fullname fix
     },
     email: {
         type: String,
@@ -22,7 +22,7 @@ const SellerSchema = new Schema({
     },
     address: {
         type: String,
-        required: true,
+        required: true,//address refix
     },
     category: {
         type: String,
@@ -33,4 +33,4 @@ const SellerSchema = new Schema({
     },
 });
 
-module.exports = mongoose.model("Seller", SellerSchema);
+module.exports = mongoose.model("Seller", SellerSchema);//export
