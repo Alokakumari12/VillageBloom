@@ -19,7 +19,7 @@ function AddProductAdmin() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-
+//file changes
     const handleFileChange = (e) => {
         const files = e.target.files;
         const validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
@@ -83,7 +83,7 @@ function AddProductAdmin() {
             console.error(error);
         }
     };
-
+//return products
     return (
         <div className='continer_full'>
             <div className='manage_Nav_full'>
