@@ -56,7 +56,7 @@ const getById = async (req, res, next) => {
     return res.status(200).json({ buyer });
 };
 
-//Update Details
+//Update the Details
 const updateData = async (req, res, next) => {
     const id = req.params.id;
     const { fullName, email, password, phone, address } = req.body;
