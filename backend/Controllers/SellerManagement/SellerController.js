@@ -108,7 +108,7 @@ const login = async (req, res, next) => {
     let seller;
 
     try {
-        seller = await SellerModel.findOne({ email: email });
+        seller = await SellerModel.findOne({ email: email });//using try catch
 
         if (!seller) {
             return res.status(404).json({ message: "Invalid email or password" });
