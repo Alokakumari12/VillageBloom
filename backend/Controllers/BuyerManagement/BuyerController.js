@@ -81,7 +81,7 @@ const updateData = async (req, res, next) => {
     return res.status(200).json({ buyer });
 };
 
-//Delete data
+//Delete the data
 const deleteData = async (req, res, next) => {
     const id = req.params.id;
 
