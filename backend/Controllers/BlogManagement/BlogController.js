@@ -112,6 +112,7 @@ const updateData = async (req, res, next) => {
 };
 
 //Delete data
+//check exception handling
 const deleteData = async (req, res, next) => {
     const id = req.params.id;
 
