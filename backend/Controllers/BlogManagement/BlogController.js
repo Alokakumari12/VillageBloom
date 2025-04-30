@@ -199,7 +199,7 @@ const deleteComment = async (req, res, next) => {
         blog.comments.splice(commentIndex, 1); // Remove the comment at the specified index
         await blog.save(); // Save the updated blog
 
-        return res.status(200).json({ comments: blog.comments }); // Return updated comments
+        return res.status(200).json({ comments: blog.comments }); // Back to Return updated comments
     } catch (err) {
         console.error(err);
         return res.status(500).json({ message: "Internal server error" });
