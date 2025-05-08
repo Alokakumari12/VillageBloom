@@ -52,7 +52,7 @@ function AdminDash() {
         doc.text('Product List', 14, 10);
 
         const tableColumn = ['Product Name', 'Price', 'Description', 'Quantity', 'Category'];
-        
+
         const tableRows = filteredProducts.map((product) => [
             product.productName,
             product.price,
@@ -70,6 +70,8 @@ function AdminDash() {
         doc.save('ProductList.pdf');
     };
 
+    //Return part
+    
     return (
         <div className='continer_full'>
             <div className='manage_Nav_full'>
