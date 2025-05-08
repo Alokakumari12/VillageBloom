@@ -32,6 +32,7 @@ function UpdateSellerProfile() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  //submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
