@@ -21,11 +21,14 @@ function AddProductAdmin() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-    
- //HandlefileChanges
+
+ //HandlefileChanges part
+
     const handleFileChange = (e) => { 
         const files = e.target.files;
+
         const validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
+        
         const isValid = Array.from(files).every((file) => validExtensions.includes(file.type));
 
         if (!isValid) {
