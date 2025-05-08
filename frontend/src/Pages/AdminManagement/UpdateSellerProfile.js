@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 
+//UpdateSeller Profile
 function UpdateSellerProfile() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ function UpdateSellerProfile() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  //submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -43,6 +45,7 @@ function UpdateSellerProfile() {
     }
   };
 
+  //ReturnSellerProfile
   return (
     <div className='continer_full'>
       <div className='manage_Nav_full'>

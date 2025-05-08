@@ -23,8 +23,7 @@ function AddProductAdmin() {
     };
   //HandlefileChanges part
 
-
-    const handleFileChange = (e) => {
+     const handleFileChange = (e) => {
 
         const files = e.target.files;
 
