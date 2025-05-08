@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LogCard from './img/admin.jpg'
 function AdminLogin() {
   const [username, setUsername] = useState('');
+
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
@@ -12,7 +13,7 @@ function AdminLogin() {
       alert('Invalid username or password');
     }
   };
-
+//returnpart
   return (
     <div className='continer_card_auth'>
       <div className='card_auth'>
