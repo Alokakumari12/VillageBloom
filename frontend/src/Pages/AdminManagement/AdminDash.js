@@ -5,9 +5,12 @@ import './admin.css';
 import { applyPlugin } from "jspdf-autotable";
 applyPlugin(jsPDF);
 
+//AdiminDash
 function AdminDash() {
     const [products, setProducts] = useState([]);
+
     const [showAdminProducts, setShowAdminProducts] = useState(true); // State to toggle filter
+    
     const [searchTerm, setSearchTerm] = useState(''); // State for search term
 
     useEffect(() => {
