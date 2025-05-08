@@ -45,6 +45,7 @@ function AddProductAdmin() {
         setImagePreviews(previews);
     };
 
+    //handleSubmit
     const handleSubmit = async (e) => {
         e.preventDefault();
 
