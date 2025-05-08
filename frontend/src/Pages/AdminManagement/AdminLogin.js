@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import LogCard from './img/admin.jpg'
+import LogCard from './img/admin.jpg';
+
+//Adminlogin part
 function AdminLogin() {
   const [username, setUsername] = useState('');
 
