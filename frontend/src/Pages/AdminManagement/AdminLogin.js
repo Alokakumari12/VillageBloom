@@ -42,6 +42,7 @@ function AdminLogin() {
                   onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
+            
               <div className='from_auth_input_con'>
                 <label className='from_lable' htmlFor="Password">Password</label>
                 <input
