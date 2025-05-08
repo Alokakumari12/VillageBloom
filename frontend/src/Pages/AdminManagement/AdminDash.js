@@ -10,7 +10,7 @@ function AdminDash() {
     const [products, setProducts] = useState([]);
 
     const [showAdminProducts, setShowAdminProducts] = useState(true); // State to toggle filter
-    
+
     const [searchTerm, setSearchTerm] = useState(''); // State for search term
 
     useEffect(() => {
@@ -25,7 +25,7 @@ function AdminDash() {
 
         fetchProducts();
     }, []);
-
+//handleDalete
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure you want to delete this product?')) {
             try {
