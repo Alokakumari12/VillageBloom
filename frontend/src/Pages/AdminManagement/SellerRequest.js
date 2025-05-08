@@ -21,7 +21,7 @@ function SellerRequest() {
     };
     fetchSellers();
   }, []);
-
+//UpadateStatus
   const updateStatus = async (id, status) => {
     try {
       await axios.put(`http://localhost:8081/seller/${id}`, { status });
