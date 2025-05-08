@@ -28,7 +28,7 @@ function AddProductAdmin() {
         const files = e.target.files;
 
         const validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
-        
+
         const isValid = Array.from(files).every((file) => validExtensions.includes(file.type));
 
         if (!isValid) {
@@ -47,7 +47,7 @@ function AddProductAdmin() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validation
+        // Validation part
         if (
             !formData.productName ||
             !formData.price ||
