@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// Product admin creation
+// Product admin creation part
 function AddProductAdmin() {
     const [formData, setFormData] = useState({
         sellerID: 'admin',
@@ -12,21 +12,24 @@ function AddProductAdmin() {
         category: '',
         images: null,
     });
+
     const [imagePreviews, setImagePreviews] = useState([]);
+
     const [error, setError] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-
-//file handle changes
-=======
+  //HandlefileChanges part
 
 
     const handleFileChange = (e) => {
+
         const files = e.target.files;
+
         const validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
+        
         const isValid = Array.from(files).every((file) => validExtensions.includes(file.type));
 
         if (!isValid) {
