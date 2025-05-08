@@ -25,5 +25,5 @@ const BuyerSchema = new Schema({
         required: true,
     },
 });
-
+//export
 module.exports = mongoose.model("Buyer", BuyerSchema);

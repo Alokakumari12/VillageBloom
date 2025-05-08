@@ -1,12 +1,12 @@
 const PaymentModel = require("../../Models/PaymentManagement/PaymentModel");
-const CartModel = require("../../Models/CartManagement/CartModel"); // Import CartModel
+const CartModel = require("../../Models/CartManagement/CartModel"); // Import the CartModel
 
 //Insert Data
 const addData = async (req, res, next) => {
-    const { fullName, email, phone, address, total, cartItemIDs, userID } = req.body; // Include userID
+    const { fullName, email, phone, address, total, cartItemIDs, userID } = req.body; // including user id
 
     try {
-        const payment = new PaymentModel({
+        const payment = new PaymentModel({ 
             fullName,
             email,
             phone,

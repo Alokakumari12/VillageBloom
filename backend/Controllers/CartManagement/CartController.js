@@ -54,7 +54,7 @@ const getById = async (req, res, next) => {
     return res.status(200).json({ cart });
 };
 
-//Update Details
+//Update the Details
 const updateData = async (req, res, next) => {
     const { id } = req.params; // Retrieve id from req.params
     const { cartQuantity } = req.body;
