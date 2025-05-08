@@ -3,7 +3,7 @@ const UserModel = require("../../Models/BuyerManagement/BuyerModel");
 const { v4: uuidv4 } = require("uuid");
 const path = require("path");
 
-//Display Data
+//displaying data
 const getAllDetails = async (req, res, next) => {
     let blog;
     try {
@@ -49,7 +49,7 @@ const addData = async (req, res, next) => {
     }
 };
 
-//Get by Id
+//getting id
 const getById = async (req, res, next) => {
     const id = req.params.id;
     let blog;
@@ -64,7 +64,7 @@ const getById = async (req, res, next) => {
     return res.status(200).json({ blog });
 };
 
-//Update Details
+//Updating detail
 const updateData = async (req, res, next) => {
     const id = req.params.id;
     const { title, description, date, ownerName, category } = req.body || {}; // Fallback to empty object if req.body is undefined
@@ -96,7 +96,8 @@ const updateData = async (req, res, next) => {
 
         // Update the blog in the database
         blog = await BlogModel.findByIdAndUpdate(id, updatedData, { new: true });
-
+        
+        // Check if the update was successful
         if (!blog) {
             return res.status(500).json({ message: "Failed to update blog" });
         }
@@ -110,7 +111,10 @@ const updateData = async (req, res, next) => {
     }
 };
 
+
 //Delete data
+//check exception handling
+
 const deleteData = async (req, res, next) => {
     const id = req.params.id;
 
@@ -199,7 +203,7 @@ const deleteComment = async (req, res, next) => {
         blog.comments.splice(commentIndex, 1); // Remove the comment at the specified index
         await blog.save(); // Save the updated blog
 
-        return res.status(200).json({ comments: blog.comments }); // Return updated comments
+        return res.status(200).json({ comments: blog.comments }); // Back to Return updated comments
     } catch (err) {
         console.error(err);
         return res.status(500).json({ message: "Internal server error" });
