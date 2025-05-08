@@ -71,7 +71,7 @@ function AdminDash() {
     };
 
     //Return part
-    
+
     return (
         <div className='continer_full'>
             <div className='manage_Nav_full'>
