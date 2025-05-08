@@ -39,6 +39,8 @@ function AdminDash() {
         }
     };
 
+    //filterdproducts
+
     const filteredProducts = products
         .filter((product) =>
             product.productName.toLowerCase().includes(searchTerm.toLowerCase())
@@ -50,6 +52,7 @@ function AdminDash() {
         doc.text('Product List', 14, 10);
 
         const tableColumn = ['Product Name', 'Price', 'Description', 'Quantity', 'Category'];
+        
         const tableRows = filteredProducts.map((product) => [
             product.productName,
             product.price,
