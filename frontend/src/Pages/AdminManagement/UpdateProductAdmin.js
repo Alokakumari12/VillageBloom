@@ -14,7 +14,7 @@ function UpdateProductAdmin() {
         category: '',
         images: null,
     });
-    
+    //constants
     const [existingImages, setExistingImages] = useState([]);
 
     const [newImagePreviews, setNewImagePreviews] = useState([]);
