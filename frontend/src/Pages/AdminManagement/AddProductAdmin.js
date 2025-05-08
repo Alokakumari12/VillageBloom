@@ -91,7 +91,7 @@ function AddProductAdmin() {
             console.error(error);
         }
     };
-//return products
+//return products part
     return (
         <div className='continer_full'>
             <div className='manage_Nav_full'>
