@@ -29,7 +29,7 @@ function AddProductAdmin() {
         const files = e.target.files;
 
         const validExtensions = ['image/jpeg', 'image/png', 'image/jpg'];
-        
+
         const isValid = Array.from(files).every((file) => validExtensions.includes(file.type));
 
         if (!isValid) {
@@ -45,10 +45,11 @@ function AddProductAdmin() {
         setImagePreviews(previews);
     };
 
+    //handleSubmit
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validation
+        // Validation part
         if (
             !formData.productName ||
             !formData.price ||
@@ -90,7 +91,7 @@ function AddProductAdmin() {
             console.error(error);
         }
     };
-//return products
+//return products part
     return (
         <div className='continer_full'>
             <div className='manage_Nav_full'>
@@ -195,4 +196,5 @@ function AddProductAdmin() {
     )
 }
 
-export default AddProductAdmin
+
+export default AddProductAdmin;

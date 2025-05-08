@@ -5,9 +5,12 @@ import './admin.css';
 import { applyPlugin } from "jspdf-autotable";
 applyPlugin(jsPDF);
 
+//AdiminDash
 function AdminDash() {
     const [products, setProducts] = useState([]);
+
     const [showAdminProducts, setShowAdminProducts] = useState(true); // State to toggle filter
+
     const [searchTerm, setSearchTerm] = useState(''); // State for search term
 
     useEffect(() => {
@@ -22,7 +25,7 @@ function AdminDash() {
 
         fetchProducts();
     }, []);
-
+//handleDalete
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure you want to delete this product?')) {
             try {
@@ -36,6 +39,8 @@ function AdminDash() {
         }
     };
 
+    //filterdproducts
+
     const filteredProducts = products
         .filter((product) =>
             product.productName.toLowerCase().includes(searchTerm.toLowerCase())
@@ -47,6 +52,7 @@ function AdminDash() {
         doc.text('Product List', 14, 10);
 
         const tableColumn = ['Product Name', 'Price', 'Description', 'Quantity', 'Category'];
+
         const tableRows = filteredProducts.map((product) => [
             product.productName,
             product.price,
@@ -63,6 +69,8 @@ function AdminDash() {
 
         doc.save('ProductList.pdf');
     };
+
+    //Return part
 
     return (
         <div className='continer_full'>

@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import LogCard from './img/admin.jpg'
+import LogCard from './img/admin.jpg';
+
+//Adminlogin part
 function AdminLogin() {
   const [username, setUsername] = useState('');
+
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
@@ -12,7 +15,7 @@ function AdminLogin() {
       alert('Invalid username or password');
     }
   };
-
+//returnpart
   return (
     <div className='continer_card_auth'>
       <div className='card_auth'>
@@ -39,6 +42,7 @@ function AdminLogin() {
                   onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
+            
               <div className='from_auth_input_con'>
                 <label className='from_lable' htmlFor="Password">Password</label>
                 <input
