@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { RiDeleteBinFill } from "react-icons/ri";
+
+//UpdateProductAdmin
 function UpdateProductAdmin() {
     const { id } = useParams(); // Get product ID from URL
     const [formData, setFormData] = useState({
@@ -13,7 +15,9 @@ function UpdateProductAdmin() {
         images: null,
     });
     const [existingImages, setExistingImages] = useState([]);
+
     const [newImagePreviews, setNewImagePreviews] = useState([]);
+
     const [newImages, setNewImages] = useState([]);
 
     useEffect(() => {
