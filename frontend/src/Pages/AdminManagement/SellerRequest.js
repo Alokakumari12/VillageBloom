@@ -69,7 +69,9 @@ function SellerRequest() {
         seller.status,
       ]),
     });
+
     doc.save('SellerRequests.pdf');
+    
   };
 
   const filteredSellers = sellers.filter((seller) =>
