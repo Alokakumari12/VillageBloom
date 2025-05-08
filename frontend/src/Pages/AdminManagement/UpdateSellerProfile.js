@@ -44,6 +44,7 @@ function UpdateSellerProfile() {
     }
   };
 
+  //ReturnSellerProfile
   return (
     <div className='continer_full'>
       <div className='manage_Nav_full'>
