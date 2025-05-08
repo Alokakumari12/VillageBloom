@@ -196,4 +196,5 @@ function AddProductAdmin() {
     )
 }
 
-export default AddProductAdmin
+
+export default AddProductAdmin;
