@@ -54,7 +54,7 @@ function SellerRequest() {
       alert('Failed to delete seller.');
     }
   };
-
+//genarate pdf
   const generatePDF = () => {
     const doc = new jsPDF();
     doc.text('Seller Requests Report', 20, 10);
@@ -71,13 +71,13 @@ function SellerRequest() {
     });
 
     doc.save('SellerRequests.pdf');
-    
+
   };
 
   const filteredSellers = sellers.filter((seller) =>
     seller.fullName.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
+//Return part
   return (
     <div className='continer_full'>
       <div className='manage_Nav_full'>
