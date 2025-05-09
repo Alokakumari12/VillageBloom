@@ -4,5 +4,5 @@ const PaymentController = require("../../Controllers/PaymentManagement/PaymentCo
 
 
 router.post("/", PaymentController.addData);
-//export
+//exxport
 module.exports = router;
