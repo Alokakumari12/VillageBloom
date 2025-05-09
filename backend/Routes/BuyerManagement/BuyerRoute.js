@@ -8,5 +8,5 @@ router.get("/:id", BuyerController.getById);
 router.put("/:id", BuyerController.updateData);
 router.delete("/:id", BuyerController.deleteData);
 router.post("/login", BuyerController.login);
-//export
+//exxport
 module.exports = router;
