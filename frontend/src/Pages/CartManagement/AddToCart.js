@@ -17,7 +17,7 @@ function AddToCart() {
             window.location.href = "/";
             return;
         }
-
+//fetch
         const fetchCartItems = async () => {
             try {
                 const response = await axios.get(`http://localhost:8081/cart?userID=${userID}`);
