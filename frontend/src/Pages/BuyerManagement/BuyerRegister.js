@@ -17,7 +17,7 @@ function BuyerRegister() {
             setEmailError('');
         }
     };
-
+//validations
     const handleSubmit = async (e) => {
         e.preventDefault();
         let isValid = true;

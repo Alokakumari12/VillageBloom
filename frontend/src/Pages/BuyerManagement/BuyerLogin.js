@@ -12,7 +12,7 @@ function BuyerLogin() {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-
+//validations
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {

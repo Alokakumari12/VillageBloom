@@ -27,7 +27,7 @@ function Payment() {
       window.location.href = "/";
       return;
     }
-
+//fetch
     const fetchUserData = async () => {
       try {
         const response = await axios.get(`http://localhost:8081/buyer/${userID}`);

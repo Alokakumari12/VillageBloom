@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Nav from '../../Components/NavBar/Nav';
 
 function UpdateBuyerProfile() {
-  const { id } = useParams(); // Get user ID from URL
+  const { id } = useParams(); // Getting user ID from URL
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',

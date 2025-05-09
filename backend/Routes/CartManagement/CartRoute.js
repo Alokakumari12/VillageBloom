@@ -28,5 +28,5 @@ router.put("/:id", async (req, res) => {
     }
 });
 router.delete("/:id", CartController.deleteData);
-//export
+//expport
 module.exports = router;
